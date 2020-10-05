@@ -40,14 +40,23 @@ button {
   padding: 2px 0 15px 0;
 }
 
-#InputComment {
-  width: 100%;
-  height: 200px;
-}
-
 img {
   width: 200px;
   height: 200px;
+  margin: 50px;
+}
+
+p {
+  margin: 30px;
+}
+
+#img {
+  float: left;
+}
+
+#text {
+  float: right;
+  width: 50%;
 }
 
 *,
@@ -57,7 +66,8 @@ img {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: .8px;
+  line-height: 2.3;
 }
 
 h2 {

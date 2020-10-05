@@ -4,7 +4,7 @@
 @import "foot";
 @import "contact";
 @import "skill";
-
+@import "index";
 // * は全体指定
 *,
 *::before,
@@ -12,10 +12,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Noto Sans JP', sans-serif;
+  // font-family: 'Noto Sans JP', sans-serif;
+    // 文字間の調整
+  letter-spacing: .8px;
+  // 行間の調整
+  line-height: 2.3;
 }
 
 h2 {
-  // margin: 0 auto;
   padding: 20px;
 }
