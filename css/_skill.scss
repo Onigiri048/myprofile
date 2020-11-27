@@ -1,10 +1,79 @@
-img {
-  width: 200px;
-  height: 200px;
-  margin: 50px;
+$base_color: #fff;
+$main_color: #82d5fb;
+$accent_color: #FAC382;
+
+
+
+#desc {
+  margin: 30px;
+  padding: 40px;
+  color: black;
 }
 
-  p{
-    margin: 30px;
-    
-  }
+#skills {
+  background-color: $base_color;
+}
+
+.skill_head {
+  color: $main-color;
+}
+
+.skill {
+  background-color: $base_color;
+}
+
+
+.skill img {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+
+.skill_set {
+  text-align: center;
+}
+
+.skill p {
+  color: $accent_color;
+  margin: 0;
+}
+
+.skill_power {
+  padding: 20px;
+}
+
+.skill_head {
+  position: relative;
+  display: inline-block;
+  padding: 0 55px;
+}
+
+.skill_head::before,
+.skill_head::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 45px;
+  height: 1px;
+  background-color: $main_color;
+}
+
+.skill_head::before,
+.skill_head::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 45px;
+  height: 1px;
+  background-color: $main_color;
+}
+
+.skill_head:before {
+  left: 0;
+}
+
+.skill_head:after {
+  right: 0;
+}

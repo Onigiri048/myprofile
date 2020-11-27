@@ -1,0 +1,87 @@
+$base_color: #fff;
+$main_color: rgb(130, 213, 251);
+$accent_color:#FAC382;
+
+.myphoto {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+}
+
+.nav-link {
+  color: $base_color;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+.about_head {
+  position: relative;
+  display: inline-block;
+  padding: 0 55px;
+}
+
+.about_head:before,
+.about_head:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 45px;
+  height: 1px;
+  background-color: $base_color;
+}
+
+.about_head:before {
+  left: 0;
+}
+
+.about_head:after {
+  right: 0;
+}
+
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.profile {
+  background-color: $main_color;
+  padding: 20px;
+}
+
+
+.intro {
+  padding: 40px;
+
+  p {
+    color: $base_color;
+  }
+}
+
+.sns_button {
+  color: $base_color;
+  margin-right: 10px;
+}
+
+.sns_button:hover {
+  color: $base_color;
+  opacity: 0.8;
+}
+
+
+
+.table>tbody>tr>td,
+th {
+  border: 1px solid $base_color !important;
+  color: $base_color !important;
+  letter-spacing: .8px;
+  line-height: 2.3;
+}
+
+.about_head {
+  color: $base_color;
+}

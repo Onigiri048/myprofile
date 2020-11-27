@@ -1,24 +1,101 @@
 @charset "utf-8";
-
 @import "head";
-@import "foot";
 @import "contact";
 @import "skill";
-@import "index";
+@import "about";
+@import "works";
+
+// レスポンシブ設定
+@import "sp";
+
+@import "confirm";
+@import "thanks";
+
+// 変数定義
+$base_color: #fff;
+$main_color: rgb(130, 213, 251);
+$accent_color:#FAC382;
 // * は全体指定
-*,
+
+// カラーサンプル
+// #ADAA51 濃いグレー
+// #64737A 薄いグレー
+
+
+
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  // font-family: 'Noto Sans JP', sans-serif;
-    // 文字間の調整
-  letter-spacing: .8px;
   // 行間の調整
+  letter-spacing: .8px;
+  // 行の高さを調整
   line-height: 2.3;
 }
 
 h2 {
-  padding: 20px;
+  margin: 60px;
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  text-align: center;
+}
+
+.head {
+  text-align: center;
+}
+
+a {
+  letter-spacing: .8px;
+  line-height: 2.3;
+}
+
+p {
+  font-size: 17px;
+  line-height: 40px;
+  letter-spacing: .8px;
+  line-height: 2.3;
+}
+
+
+
+
+
+.page-top {
+  margin: 0;
+  padding: 0;
+}
+
+.page-top p {
+  margin: 0;
+  padding: 0;
+
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+}
+
+.move-page-top {
+  display: block;
+  background: #64737A;
+  width: 50px;
+  height: 50px;
+  opacity: 0.8;
+  color: #fff;
+  line-height: 50px;
+  text-decoration: none;
+  text-align: center;
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.move-page-top:hover {
+  opacity: 0.85;
+}
+
+
+.father {
+  text-align: center;
 }

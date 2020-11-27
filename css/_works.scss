@@ -1,0 +1,66 @@
+$base_color: #fff;
+$main_color: rgb(130, 213, 251);
+$accent_color: #FAC382;
+
+
+.certificate {
+  height: 200px;
+  width: 300px;
+}
+
+.works {
+  background-color: $main_color;
+  padding: 20px;
+  text-align: center;
+
+  p {
+    color: $base_color;
+  }
+}
+
+
+
+.images img {
+  height: 200px;
+  width: 300px;
+  object-fit: fit;
+}
+
+.works_head {
+  color: $base_color;
+  position: relative;
+  display: inline-block;
+  padding: 0 55px;
+}
+
+
+
+.works_head::before,
+.works_head::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 45px;
+  height: 1px;
+  background-color: $base_color;
+}
+
+.works_head::before,
+.works_head::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 45px;
+  height: 1px;
+  background-color: $base_color;
+}
+
+.works_head:before {
+  left: 0;
+}
+
+.works_head:after {
+  right: 0;
+}

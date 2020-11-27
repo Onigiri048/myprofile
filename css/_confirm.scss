@@ -1,0 +1,83 @@
+$base_color: #fff;
+$main_color: rgb(130, 213, 251);
+$accent_color:#FAC382;
+
+
+
+.confirm {
+  border: 1px solid $main_color;
+  border-radius: 10px;
+  padding: 30px;
+
+
+  .confirm_head {
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+#radius {
+  border-radius: 120px;
+}
+
+.center {
+  text-align: center;
+}
+
+.display_item {
+  padding: 7px 0;
+  margin-bottom: 30px;
+}
+
+
+
+form>p,
+.container>p {
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+label {
+  padding-top: 7px;
+}
+
+// .form-group {
+//   margin-bottom: 0;
+// }
+
+/* contact.html */
+.require_item {
+  background-color: #ff0000;
+  color: #fff;
+  text-align: center;
+  width: 62.5%;
+  padding: 3.75% 0;
+  float: right;
+}
+
+.error_msg {
+  font-size: 14px;
+  color: #ff0000;
+  height: 14px;
+}
+
+.send_btn {
+  color: white;
+  background-color: $main_color;
+  border-color: $main_color;
+  margin-left: 10px;
+}
+
+.send_btn:hover {
+  opacity: 0.8;
+  background-color: $main_color;
+  border-color: $main_color;
+
+}
+
+.back_btn:hover {
+  color: white;
+}

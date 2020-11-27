@@ -1,0 +1,191 @@
+// iPhone6/7/8 Plus
+@media screen and (max-width: 414px) {
+  p {
+    line-height: 1.6 !important;
+  }
+
+  .images img {
+    margin: 10px;
+    height: 100px;
+    width: 145px;
+    object-fit: fit;
+  }
+
+  .guitar {
+    height: 400px;
+    width: 100%;
+    object-fit: fit;
+  }
+
+  .name {
+    font-size: 30px !important;
+    top: 60% !important;
+    left: 50% !important;
+    -ms-transform: translate(-50%, -60%) !important;
+    -webkit-transform: translate(-50%, -60%) !important;
+    transform: translate(-50%, -60%) !important;
+  }
+
+  #desc {
+    padding: 10px;
+    margin: 5px;
+    font-size: 15px;
+  }
+
+  .skill span {
+    font-size: 10px;
+  }
+
+  h2 {
+    margin: 30px !important;
+    font-size: 30px !important;
+  }
+
+  .myphoto {
+    margin: 50px 80px 50px;
+  }
+
+  .intro {
+    padding: 20px;
+
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+// iPhone X
+@media screen and (max-width: 375px) {
+  p {
+    line-height: 1.8 !important;
+  }
+
+  h2 {
+    margin: 30px !important;
+  }
+
+  .intro {
+    padding: 15px;
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .works {
+    p {
+      font-size: 15px;
+    }
+
+  }
+
+  .name {
+    font-size: 25px !important;
+    top: 60% !important;
+    left: 50% !important;
+    -ms-transform: translate(-50%, -60%) !important;
+    -webkit-transform: translate(-50%, -60%) !important;
+    transform: translate(-50%, -60%) !important;
+  }
+
+  .guitar {
+    height: 350px;
+    width: 100%;
+    object-fit: fit;
+  }
+
+
+  .images img {
+    height: 100px;
+    width: 100px;
+    object-fit: fit;
+  }
+
+  #desc {
+    padding: 10px;
+    margin: 5px;
+    font-size: 15px;
+  }
+
+  .sns_button {
+    justify-content: space-between;
+  }
+
+  .skill span {
+    font-size: 14px;
+  }
+
+  .myphoto {
+    margin: 50px 70px 50px;
+  }
+}
+
+
+// iPhone SE
+@media screen and (max-width: 320px) {
+  p {
+    line-height: 1.8 !important;
+  }
+
+
+  h2 {
+    margin: 20px !important;
+    font-size: 30px !important;
+  }
+
+  .about_head {
+    margin: 20px;
+  }
+
+  .guitar {
+    height: 250px;
+    width: 100%;
+    object-fit: fit;
+  }
+
+  .name {
+    font-size: 20px !important;
+    top: 60% !important;
+    left: 50% !important;
+    -ms-transform: translate(-50%, -60%) !important;
+    -webkit-transform: translate(-50%, -60%) !important;
+    transform: translate(-50%, -60%) !important;
+  }
+
+  .intro {
+    padding: 10px;
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .skill_head {
+    padding: 20px;
+  }
+
+  #desc {
+    padding: 10px;
+    margin: 5px;
+    font-size: 15px;
+  }
+
+  .images img {
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    object-fit: fit;
+  }
+
+
+  .works {
+    p {
+      font-size: 10px;
+    }
+
+  }
+
+  .myphoto {
+    margin: 50px 40px 50px;
+  }
+}

@@ -1,8 +1,8 @@
+$base_color: #fff;
+$main_color: rgb(130, 213, 251);
+$accent_color: #F39BFA;
+
 header {
-  padding: 15px 0;
-  margin: 0 auto;
-  height: 120px;
-  text-align: center;
 
   h1 {
     font-size: 32px;
@@ -20,3 +20,44 @@ header {
     margin: 0 20px;
   }
 }
+
+.logo {
+  height: auto;
+  width: 60px;
+  object-fit: fit;
+}
+
+.guitar {
+  height: 750px;
+  width: 100%;
+  object-fit: fit;
+}
+
+.head {
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+
+  p {
+    position: absolute;
+    /*絶対配置*/
+    color: $base_color;
+    /*文字は白に*/
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    font-size: 80px;
+    font-weight: bold;
+    /*太字に*/
+    font-family: 'Pacifico', cursive;
+    /*Google Font*/
+  }
+
+}
+
