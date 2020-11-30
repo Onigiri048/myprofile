@@ -115,6 +115,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
   </section>
   <!-- 自己紹介 -->
+  <div class="for-scroll"></div>
   <section>
     <div class="container profile">
       <div class="row">
@@ -126,9 +127,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <!-- 自己紹介文 -->
         <div class=" intro col-12 col-lg-9">
-          <p>22卒、TOEICスコア:550(20年11月時点)</p>
+          <p>22卒、TOEICスコア:550点(20年11月時点)</p>
           <p>
-            はじめまして！同朋大学 ３年文学部 人文学科の宮村 翔といいます！名古屋商科大学を中退して１年ほど浪人でしたが、今は気持ちを新たにがんばっています。
+            はじめまして！同朋大学 ３年 文学部 人文学科の宮村 翔といいます！名古屋商科大学を中退して１年ほど浪人でしたが、今は気持ちを新たにがんばっています。
           </p>
           <p>
             大学では中国のことについて勉強していて、論文テーマには今のところ魏の武帝である曹操について研究したいと考えています。
@@ -137,7 +138,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             趣味はギターを弾くことで、高校生の頃からはじめました。現在は軽音サークルに所属していて、２年生の頃には大学祭に出演しました。1960~80年代の洋楽が好きでAC/DC、Queen、U2などを聞いています！
           </p>
           <p>私のモットーは日々精進です！昨日の自分よりも今日の自分が好きでいられるように、一日の終りにその日の出来事を振り返って改善を図っています。</p>
-          <p>いつか、シリコンバレーにてフロントエンド・エンジニアとして働きたいと思っています。そのために、英語の勉強、そしてコンピューターサイエンスを学ぶために大学院へ進学したいと考えております。そして、現在のGPA2.52を在学中にGPA3.0以上に上げたいと考えており、４年次に多くの科目を取得していこうと思っています。</p>
+          <p>いつか、シリコンバレーにてフロントエンド・エンジニアとして働きたいと思っています。現在、英語の勉強をしており、コンピューターサイエンスを学ぶために将来的には大学院へ進学したいと考えております。そのために、現在のGPA2.52を在学中にGPA3.0以上に上げたいと考えており、４年次に多くの科目を取得していこうと思っています。</p>
 
 
           <a class="sns_button" href="https://twitter.com/onigiri0392"><i class="fab fa-twitter">Twitter</i></a>
@@ -324,9 +325,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
   </div>
 
-  <div id="page-top" class="page-top">
-    <p><a id="move-page-top" class="move-page-top">▲</a></p>
-  </div>
+  <div id="js-scroll-top" class="scroll-top">TOP</div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

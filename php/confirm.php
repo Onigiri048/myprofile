@@ -1,6 +1,11 @@
 <?php
 session_start();
 
+//PHPMailer の読み込み （★PHPMailer 用に追加）
+require '../php_mailer/vendor/autoload.php';
+//メールアカウント情報（パスワード等）の読み込み （★PHPMailer 用に追加）
+require '../libs/phpmailvars.php';
+
 //入力画面からのアクセスでなれければ、戻す
 if (!isset($_SESSION['form'])) {
   header('Location: ../index.php');
@@ -9,9 +14,7 @@ if (!isset($_SESSION['form'])) {
   $post = $_SESSION['form'];
 }
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  // メールを送信する
-  $to = 'ichionmiya0256@gmail.com';
+ $to = 'nissin5648@yahoo.co.jp';
   $form = $post['email'];
   $subject = 'お問い合わせが届きました';
   $body = <<<EOT
@@ -19,15 +22,72 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   メールアドレス: {$post['email']}
   内容: {$post['contact']}
   EOT;
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  // メールを送信する
   // メールの中身の確認
   // var_dump($body);
   // exit();
-  mb_send_mail($to, $subject, $body, "From: {$from}");
 
-  //セッションを消してお礼画面へ
+  // //セッションを消してお礼画面へ
   unset($_SESSION['form']);
   header('Location: thanks.html');
   exit();
+}
+
+//-------- ★★★ PHPMailer を使ったメールの送信処理 ★★★ ------------
+
+//PHPMailer 名前空間の使用
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+//mbstring の日本語設定
+mb_language("japanese");
+mb_internal_encoding("UTF-8");
+
+//PHPMailer のインスタンスを生成
+$mail = new PHPMailer(true);
+
+try {
+  //サーバ設定
+  // $mail->SMTPDebug = SMTP::DEBUG_SERVER;   // デバグの出力を有効に
+  $mail->isSMTP();  // SMTP を使用
+  $mail->Host       = MAIL_HOST; // SMTP サーバーを指定（phpmailvars.phpで定義）
+  $mail->SMTPAuth   = true;      // SMTP authentication を有効に
+  $mail->Username   = MAIL_USER; // SMTP ユーザ名（phpmailvars.phpで定義）
+  $mail->Password   = MAIL_PASSWORD; // SMTP パスワード（phpmailvars.phpで定義）
+  $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // TLS を有効に
+  $mail->Port       = 587; // TCP ポートを指定
+
+  //日本語用
+  $mail->CharSet = "iso-2022-jp";
+  $mail->Encoding = "7bit";
+
+  //Recipients
+  $mail->setFrom($post['email'], mb_encode_mimeheader($post['name']));  //差出人アドレス, 差出人名
+  $mail->AddAddress(SEND_TO, mb_encode_mimeheader(SEND_TO_NAME)); //送信先アドレス・宛先名（phpmailvars.phpで定義）
+  $mail->AddBcc(BCC);  //Bcc アドレス（phpmailvars.phpで定義）
+
+  $mail->isHTML(false);    // Set email format to plain text
+  $mail->Subject = mb_encode_mimeheader($subject);   //件名
+  $mail->WordWrap = 70;  //70 文字で改行（好みで）
+
+  $mail->Body  = mb_convert_encoding($body, "JIS", "UTF-8");
+
+  //メール送信の結果（真偽値）を $result に代入
+  $result = $mail->send();
+} catch (Exception $e) {
+  //PHPMailer のエラーを表示する場合
+  //echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+}
+
+//メール送信の結果判定
+if ($result) {
+  // //成功した場合はセッションを破棄
+  // $_SESSION = array(); //空の配列を代入し、すべてのセッション変数を消去
+  // session_destroy(); //セッションを破棄
+} else {
+  //送信失敗時（もしあれば）
 }
 ?>
 

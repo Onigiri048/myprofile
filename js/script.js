@@ -1,82 +1,3 @@
-// // グローバル変数
-// var syncerTimeout = null ;
-
-// // 一連の処理
-// $( function()
-// {
-// 	// スクロールイベントの設定
-// 	$( window ).scroll( function()
-// 	{
-// 		// 1秒ごとに処理
-// 		if( syncerTimeout == null )
-// 		{
-// 			// セットタイムアウトを設定
-// 			syncerTimeout = setTimeout( function(){
-
-// 				// 対象のエレメント
-// 				var element = $( '#page-top' ) ;
-
-// 				// 現在、表示されているか？
-// 				var visible = element.is( ':visible' ) ;
-
-// 				// 最上部から現在位置までの距離を取得して、変数[now]に格納
-// 				var now = $( window ).scrollTop() ;
-
-// 				// 最下部から現在位置までの距離を計算して、変数[under]に格納
-// 				var under = $( 'body' ).height() - ( now + $(window).height() ) ;
-
-// 				// 最上部から現在位置までの距離(now)が1500以上かつ
-// 				// 最下部から現在位置までの距離(under)が200px以上かつ…
-// 				if( now > 1500 && 200 < under )
-// 				{
-// 					// 非表示状態だったら
-// 					if( !visible )
-// 					{
-// 						// [#page-top]をゆっくりフェードインする
-// 						element.fadeIn( 'slow' ) ;
-// 					}
-// 				}
-
-// 				// 1500px以下かつ
-// 				// 表示状態だったら
-// 				else if( visible )
-// 				{
-// 					// [#page-top]をゆっくりフェードアウトする
-// 					element.fadeOut( 'slow' ) ;
-// 				}
-
-// 				// フラグを削除
-// 				syncerTimeout = null ;
-// 			} , 1000 ) ;
-// 		}
-// 	} ) ;
-
-// 	// クリックイベントを設定する
-// 	$( '#move-page-top' ).click(
-// 		function()
-// 		{
-// 			// スムーズにスクロールする
-// 			$( 'html,body' ).animate( {scrollTop:0} , 'slow' ) ;
-// 		}
-// 	) ;
-// } ) ;
-
-
-// var element = document.getElementById('target'); // 移動させたい位置の要素を取得
-//     var rect = element.getBoundingClientRect();
-//     var position = rect.top;    // 一番上からの位置を取得
-
-// function scrollToTop() {
-//   scrollTo(0, position);
-// }
-
-// function scrollToTop() {
-//   scrollTo(0, position);
-// }
-
-// function scr_about() {
-// window.scroll(0,2500);
-// }
 
 
 // 使用するデバイスがスマホではない時
@@ -332,4 +253,43 @@ window.scrollTo({
 });
 });
 
+}
+
+// スクロールで出現
+const pageTopBtn = document.getElementById('js-scroll-top');
+window.addEventListener("scroll", () => {
+  const currentY = window.pageYOffset;
+  if ( currentY > 100){
+    setTimeout(function(){
+      pageTopBtn.style.opacity = 1;
+    }, 1);
+  } else {
+    setTimeout(function(){
+      pageTopBtn.style.opacity = 0;
+    }, 1);
+  }
+});
+
+// スクロールトップボタン
+scrollTop('js-scroll-top', 150); // 遅すぎるとガクガクになるので注意
+
+function scrollTop(el, duration) {
+  const target = document.getElementById(el);
+  target.addEventListener('click', function() {
+    let currentY = window.pageYOffset; // 現在のスクロール位置を取得
+    let step = duration/currentY > 1 ? 10 : 100; // 三項演算子
+    let timeStep = duration/currentY * step; // スクロール時間
+    let intervalId = setInterval(scrollUp, timeStep);
+    // timeStepの間隔でscrollUpを繰り返す。
+    // clearItervalのために返り値intervalIdを定義する。
+
+    function scrollUp(){
+      currentY = window.pageYOffset;
+      if(currentY === 0) {
+          clearInterval(intervalId); // ページ最上部に来たら終了
+      } else {
+          scrollBy( 0, -step ); // step分上へスクロール
+      }
+    }
+  });
 }
