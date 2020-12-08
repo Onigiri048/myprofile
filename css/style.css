@@ -55,14 +55,6 @@ header li {
   /*Google Font*/
 }
 
-.navbar a:hover {
-  border-bottom: 1px solid #000;
-}
-
-.navbar {
-  height: 100px;
-}
-
 form {
   width: 100%;
 }
@@ -180,7 +172,11 @@ footer {
 .myphoto {
   width: 200px;
   height: 200px;
-  margin: 50px;
+  margin: 0 auto;
+}
+
+.wide {
+  width: 100%;
 }
 
 .nav-link {
@@ -240,6 +236,15 @@ p {
   opacity: 0.8;
 }
 
+.margin {
+  margin: 0 35px;
+  width: 100%;
+}
+
+.sns_str {
+  padding-left: 5px;
+}
+
 .table > tbody > tr > td,
 th {
   border: 1px solid #fff !important;
@@ -250,6 +255,10 @@ th {
 
 .about_head {
   color: #fff;
+}
+
+.strings {
+  margin: 20px 25px;
 }
 
 .certificate {
@@ -315,6 +324,13 @@ th {
   p {
     line-height: 1.6 !important;
   }
+  .margin {
+    margin: 0 15px;
+  }
+  .strings {
+    margin: 10px auto;
+    font-size: 13px;
+  }
   .images img {
     margin: 10px;
     height: 100px;
@@ -323,14 +339,14 @@ th {
        object-fit: fit;
   }
   .guitar {
-    margin-top: 100px;
+    margin-top: 80px;
     height: 300px;
     width: 100%;
     -o-object-fit: fit;
        object-fit: fit;
   }
   .name {
-    font-size: 30px !important;
+    font-size: 27px !important;
     top: 60% !important;
     left: 50% !important;
     -webkit-transform: translate(-50%, -60%) !important;
@@ -372,18 +388,15 @@ th {
   .intro p {
     font-size: 16px;
   }
-  .works p {
-    font-size: 15px;
-  }
   .name {
-    font-size: 25px !important;
+    font-size: 22px !important;
     top: 60% !important;
     left: 50% !important;
     -webkit-transform: translate(-50%, -60%) !important;
     transform: translate(-50%, -60%) !important;
   }
   .guitar {
-    margin-top: 100px;
+    margin-top: 80px;
     height: 250px;
     width: 100%;
     -o-object-fit: fit;
@@ -418,21 +431,21 @@ th {
     line-height: 1.8 !important;
   }
   h2 {
-    margin: 20px !important;
+    margin: 30px !important;
     font-size: 30px !important;
   }
   .about_head {
     margin: 20px;
   }
   .guitar {
-    margin-top: 100px;
+    margin-top: 80px;
     height: 200px;
     width: 100%;
     -o-object-fit: fit;
        object-fit: fit;
   }
   .name {
-    font-size: 18px !important;
+    font-size: 15px !important;
     top: 70% !important;
     left: 50% !important;
     -webkit-transform: translate(-50%, -70%) !important;
@@ -443,9 +456,6 @@ th {
   }
   .intro p {
     font-size: 15px;
-  }
-  .skill_head {
-    padding: 20px;
   }
   #desc {
     padding: 10px;
@@ -584,37 +594,6 @@ p {
   line-height: 40px;
   letter-spacing: .8px;
   line-height: 2.3;
-}
-
-.page-top {
-  margin: 0;
-  padding: 0;
-}
-
-.page-top p {
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  right: 16px;
-  bottom: 16px;
-}
-
-.move-page-top {
-  display: block;
-  background: #64737A;
-  width: 50px;
-  height: 50px;
-  opacity: 0.8;
-  color: #fff;
-  line-height: 50px;
-  text-decoration: none;
-  text-align: center;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.move-page-top:hover {
-  opacity: 0.85;
 }
 
 .father {

@@ -1,6 +1,4 @@
-
-
-// 使用するデバイスがスマホではない時
+// PCの場合
 
 // トップへジャンプ
 document.addEventListener("DOMContentLoaded", function() {
@@ -32,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_skill").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 1647,
+  top:2455,
   left: 0,
   behavior: 'smooth'
   });
@@ -44,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_works").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 2439,
+  top: 3405,
   left: 0,
   behavior: 'smooth'
   });
@@ -56,15 +54,15 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_contact").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 3274,
+  top: 4350,
   left: 0,
   behavior: 'smooth'
 });
 });
 });
 
-// iPhone 6/7/8
-if(navigator.userAgent.match("(max-width: 320px)")){
+// iPhone 6/7/8 Plus
+if((window.matchMedia('(max-width: 414px)').matches)){
 document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_top").addEventListener("click", function(event) {
   event.preventDefault();
@@ -81,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_about").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 209,
+  top: 300,
   left: 0,
   behavior: 'smooth'
   });
@@ -94,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_skill").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 1441,
+  top: 2410,
   left: 0,
   behavior: 'smooth'
   });
@@ -106,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_works").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 2472,
+  top: 3550,
   left: 0,
   behavior: 'smooth'
   });
@@ -118,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_contact").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 3040,
+  top: 4200,
   left: 0,
   behavior: 'smooth'
 });
@@ -128,8 +126,8 @@ window.scrollTo({
 }
 
 
-// iPhone X
-if(navigator.userAgent.match("(max-width: 375px)")){
+// iPhone 6/7/8/X
+if((window.matchMedia('(max-width: 375px)').matches)){
 document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_top").addEventListener("click", function(event) {
   event.preventDefault();
@@ -146,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_about").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 209,
+  top: 250,
   left: 0,
   behavior: 'smooth'
   });
@@ -159,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_skill").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 1441,
+  top: 2765,
   left: 0,
   behavior: 'smooth'
   });
@@ -171,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_works").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 2472,
+  top: 4070,
   left: 0,
   behavior: 'smooth'
   });
@@ -183,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_contact").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 3040,
+  top: 4800,
   left: 0,
   behavior: 'smooth'
 });
@@ -191,8 +189,9 @@ window.scrollTo({
 });
 
 }
-// iPhone SE
-if(navigator.userAgent.match("(max-width: 320px)")){
+// iPhone 5/SE
+
+if((window.matchMedia('(max-width: 320px)').matches)){
 document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_top").addEventListener("click", function(event) {
   event.preventDefault();
@@ -209,7 +208,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_about").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 209,
+  top: 200,
   left: 0,
   behavior: 'smooth'
   });
@@ -222,7 +221,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_skill").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 1441,
+  top: 2820,
   left: 0,
   behavior: 'smooth'
   });
@@ -234,7 +233,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_works").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 2472,
+  top: 4200,
   left: 0,
   behavior: 'smooth'
   });
@@ -246,7 +245,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_contact").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 3040,
+  top: 4850,
   left: 0,
   behavior: 'smooth'
 });
@@ -254,6 +253,8 @@ window.scrollTo({
 });
 
 }
+
+
 
 // スクロールで出現
 const pageTopBtn = document.getElementById('js-scroll-top');

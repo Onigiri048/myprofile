@@ -5,8 +5,13 @@ $accent_color:#FAC382;
 .myphoto {
   width: 200px;
   height: 200px;
-  margin: 50px;
+  margin: 0 auto;
 }
+
+.wide {
+  width: 100%;
+}
+
 
 .nav-link {
   color: $base_color;
@@ -72,7 +77,14 @@ p {
   opacity: 0.8;
 }
 
+.margin {
+  margin: 0 35px;
+  width: 100%;
+}
 
+.sns_str {
+  padding-left: 5px;
+}
 
 .table>tbody>tr>td,
 th {
@@ -80,6 +92,7 @@ th {
   color: $base_color !important;
   letter-spacing: .8px;
   line-height: 2.3;
+  
 }
 
 .about_head {

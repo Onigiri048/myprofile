@@ -4,6 +4,14 @@
     line-height: 1.6 !important;
   }
 
+  .margin {
+    margin: 0 15px;
+  }
+
+  .strings {
+    margin: 10px auto;
+    font-size: 13px;
+  }
   .images img {
     margin: 10px;
     height: 100px;
@@ -12,14 +20,14 @@
   }
 
   .guitar {
-    margin-top: 100px;
+    margin-top: 80px;
     height: 300px;
     width: 100%;
     object-fit: fit;
   }
 
   .name {
-    font-size: 30px !important;
+    font-size: 27px !important;
     top: 60% !important;
     left: 50% !important;
     -ms-transform: translate(-50%, -60%) !important;
@@ -55,7 +63,7 @@
   }
 }
 
-// iPhone X
+// iPhone 6/7/8,X
 @media screen and (max-width: 375px) {
   p {
     line-height: 1.8 !important;
@@ -73,15 +81,10 @@
     }
   }
 
-  .works {
-    p {
-      font-size: 15px;
-    }
 
-  }
 
   .name {
-    font-size: 25px !important;
+    font-size: 22px !important;
     top: 60% !important;
     left: 50% !important;
     -ms-transform: translate(-50%, -60%) !important;
@@ -90,7 +93,7 @@
   }
 
   .guitar {
-    margin-top: 100px;
+    margin-top: 80px;
     height: 250px;
     width: 100%;
     object-fit: fit;
@@ -123,7 +126,7 @@
 }
 
 
-// iPhone SE
+// iPhone 5/SE
 @media screen and (max-width: 320px) {
   p {
     line-height: 1.8 !important;
@@ -131,7 +134,7 @@
 
 
   h2 {
-    margin: 20px !important;
+    margin: 30px !important;
     font-size: 30px !important;
   }
 
@@ -140,14 +143,14 @@
   }
 
   .guitar {
-    margin-top: 100px;
+    margin-top: 80px;
     height: 200px;
     width: 100%;
     object-fit: fit;
   }
 
   .name {
-    font-size: 18px !important;
+    font-size: 15px !important;
     top: 70% !important;
     left: 50% !important;
     -ms-transform: translate(-50%, -70%) !important;
@@ -163,9 +166,7 @@
     }
   }
 
-  .skill_head {
-    padding: 20px;
-  }
+
 
   #desc {
     padding: 10px;

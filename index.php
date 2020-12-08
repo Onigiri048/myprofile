@@ -122,30 +122,42 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="col-12 col-sm-12 father">
           <h2 class="about_head">About</h2>
         </div>
-        <div class="col-xs-12 col-lg-3">
+        <div class="center wide">
           <img class="rounded-circle myphoto" src="./images/myphoto.jpg" alt="">
         </div>
         <!-- 自己紹介文 -->
-        <div class=" intro col-12 col-lg-9">
-          <p>22卒、TOEICスコア:550点(20年11月時点)</p>
+        <div class=" intro">
           <p>
-            はじめまして！同朋大学 ３年 文学部 人文学科の宮村 翔といいます！名古屋商科大学を中退して１年ほど浪人でしたが、今は気持ちを新たにがんばっています。
+            はじめまして、同朋大学 ３年 文学部 人文学科 歴史文化専攻の宮村 翔といいます
+            。名古屋商科大学を中退して、１年ほど浪人していましたが今は気持ちを新たにしてがんばっています！
           </p>
           <p>
-            大学では中国のことについて勉強していて、論文テーマには今のところ魏の武帝である曹操について研究したいと考えています。
+            将来、海外で働くのが私の目標です。かつて、どん底にいた自分がどこまで這い上がることができるのか、試したいです。そして、現在同じような境遇にいる人の励みになれるような存在になりたいです。世界ではIT人材が不足していると知り、プログラミングの技術を身につけて、ワールドワイドで活躍できるグローバル人材になりたいと考えました。そのために、文系ですがプログラミングの独学を始めました。
           </p>
           <p>
-            趣味はギターを弾くことで、高校生の頃からはじめました。現在は軽音サークルに所属していて、２年生の頃には大学祭に出演しました。1960~80年代の洋楽が好きでAC/DC、Queen、U2などを聞いています！
+            英語を学ぶためにTOEICの勉強を６月頃から１日１時間スタディサプリENGLISHを活用して行っております。そして、プログラミングの学習を１日2〜３時間、UdemyやYoutubeといった動画教材を活用してスキルを習得しています。
           </p>
-          <p>私のモットーは日々精進です！昨日の自分よりも今日の自分が好きでいられるように、一日の終りにその日の出来事を振り返って改善を図っています。</p>
-          <p>いつか、シリコンバレーにてフロントエンド・エンジニアとして働きたいと思っています。現在、英語の勉強をしており、コンピューターサイエンスを学ぶために将来的には大学院へ進学したいと考えております。そのために、現在のGPA2.52を在学中にGPA3.0以上に上げたいと考えており、４年次に多くの科目を取得していこうと思っています。</p>
+          <p>
+            現在、GDPランキング１位であるアメリカについてだけではなく、２位の中国のことも学ぶために、大学では中国の歴史を勉強しています。世界情勢を鑑みても中国について知ることは、大変意義のあることだと考えています。
+          </p>
+          <p>
+            大学ではとりわけ秦朝〜三国時代までの歴史について勉強しており、論文テーマには魏の武帝である曹操について研究します。小学生の頃より、歴史小説、歴史漫画が好きで日本の戦国時代や「三国史演義」、「蒼天航路」、「キングダム」などを読んでいました。大学では、「史記」や「三国志」の原文の漢文の訓読と読解を行っております。
+          </p>
+          <p>私のモットーは日々精進です！昨日の自分よりも今日の自分が好きでいられるように、１日の終りにその日の出来事を振り返って改善を図っています。具体的には、１日のスケジュールを事前にノートに書き出しておいて、その日の夜に自己評価して、次に予定を立てるときの参考にします。
+          </p>
+          <p>
+            趣味はギターを弾くことで、高校生の頃から始めました。現在は軽音サークルに所属していて、大学祭に出演しました。1970~80年代の洋楽が好きでAC/DC、Queen、U2などを聞いています。洋楽を好きになったきっかけは「ジョジョの奇妙な冒険」という漫画で登場人物のスタンド名の由来を調べたことです。とりわけQueenは中学生の時から聞いており、今でも大好きでスイスのモントルーにあるフレディ・マーキュリーの銅像と一緒に記念写真を撮りました。
+          </p>
+          <p>
+            ご覧いただきありがとうございます。いつか、お会いできる日を楽しみにしています。
+          </p>
 
 
-          <a class="sns_button" href="https://twitter.com/onigiri0392"><i class="fab fa-twitter">Twitter</i></a>
-          <a class="sns_button" href="https://github.com/Onigiri048"><i class="fab fa-github">GitHub</i></a>
-          <a class="sns_button" href="https://www.youtube.com/channel/UCXnvOBpqylNCyZ7xdjWvC5Q/"><i class="fab fa-youtube">Youtube</i></a>
+          <a class="sns_button" href="https://twitter.com/onigiri0392"><i class="fab fa-twitter"><span class="sns_str">Twitter</span></i></a>
+          <a class="sns_button" href="https://github.com/Onigiri048"><i class="fab fa-github"><span class="sns_str">GitHub</span> </i></a>
+          <a class="sns_button" href="https://www.youtube.com/channel/UCXnvOBpqylNCyZ7xdjWvC5Q/"><i class="fab fa-youtube"><span class="sns_str">Youtube</span></i></a>
         </div>
-        <div class="col-12 col-lg-12">
+        <div class=" margin">
           <table class="table">
             <tbody>
               <tr>
@@ -247,23 +259,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <a href="https://www.udemy.com/course/php7basic/">
           <img class="certificate" src="./images/certificate1.jpg" alt="">
         </a>
-        <p>udemyにてPHPの講座を修了しました。</p>
+        <p class="strings">udemyにてPHPの講座を修了しました。</p>
       </div>
       <div class="col-6 col-sm-6">
         <a href="https://www.tech-commit.jp/5emCyhdQUxGOBDwX"><img class="techcommit" src="./images/techcommit2.png" alt="">
         </a>
-        <p>普段はTech Commitを利用しており、20時~22時にzoomを使って勉強会に参加しています。また、学習日報も記録しています。</p>
+        <p class="strings">普段はTech Commitを利用しており、20時~22時にzoomを使って勉強会に参加しています。また、学習日報も記録しています。</p>
       </div>
       <div class="col-6 col-sm-6">
         <a href="https://techbowl.co.jp/techtrain"><img src="./images/techtrain.png" alt="">
         </a>
-        <p>Tech Trainで企業やメンターからのミッションをメンターの方と面談しながら挑戦しています。こちらの自己紹介サイトもミッションの一つです。</p>
+        <p class="strings">Tech Trainで企業やメンターからのミッションをメンターの方と面談しながら挑戦しています。こちらの自己紹介サイトもミッションの一つです。</p>
       </div>
       <div class="col-6 col-sm-6">
         <a href="https://engineer-shukatu.jp/techbase/">
           <img src="./images/techbase.jpg" alt="">
         </a>
-        <p>TECH-BASEのインターンに2020/9/24~11/5まで参加いたしました。７つのチームで7人ずつに分かれてPHPを使って簡易掲示板を作りました。</p>
+        <p class="strings">TECH-BASEのインターンに2020/9/24~11/5まで参加いたしました。７つのチームで7人ずつに分かれてPHPを使って簡易掲示板を作りました。</p>
       </div>
     </div>
   </div>
@@ -316,6 +328,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </form>
     </div>
   </div>
+  <div id="js-scroll-top" class="scroll-top">TOP</div>
   <!-- フッター -->
   <div class="container bottom">
     <div class="row">
@@ -325,7 +338,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
   </div>
 
-  <div id="js-scroll-top" class="scroll-top">TOP</div>
+
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
