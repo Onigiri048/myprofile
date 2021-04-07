@@ -257,6 +257,21 @@ th {
   color: #fff;
 }
 
+h4 {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  margin: 25px 0 10px 0;
+}
+
+.text {
+  margin: 0;
+}
+
+.conclusion {
+  font-size: 25px;
+  margin-top: 25px;
+}
+
 .strings {
   margin: 20px 25px;
 }
@@ -373,6 +388,10 @@ th {
   .intro p {
     font-size: 15px;
   }
+  .conclusion {
+    font-size: 20px !important;
+    margin-top: 25px;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -424,6 +443,10 @@ th {
   .myphoto {
     margin: 50px 70px 50px;
   }
+  .conclusion {
+    font-size: 18px !important;
+    margin-top: 25px;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -474,6 +497,10 @@ th {
   }
   .myphoto {
     margin: 50px 40px 50px;
+  }
+  .conclusion {
+    font-size: 18px !important;
+    margin-top: 25px;
   }
 }
 
@@ -571,6 +598,10 @@ label {
   padding: 0;
   letter-spacing: .8px;
   line-height: 2.3;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 h2 {

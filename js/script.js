@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_about").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 707,
+  top: 680,
   left: 0,
   behavior: 'smooth'
   });
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_skill").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top:2455,
+  top: 3250,
   left: 0,
   behavior: 'smooth'
   });
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_works").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 3405,
+  top: 4150,
   left: 0,
   behavior: 'smooth'
   });
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_contact").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 4350,
+  top: 5050,
   left: 0,
   behavior: 'smooth'
 });
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_skill").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 2410,
+  top: 3250,
   left: 0,
   behavior: 'smooth'
   });
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_works").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 3550,
+  top: 4400,
   left: 0,
   behavior: 'smooth'
   });
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_contact").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 4200,
+  top: 5050,
   left: 0,
   behavior: 'smooth'
 });
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_skill").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 2765,
+  top: 3780,
   left: 0,
   behavior: 'smooth'
   });
@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_works").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 4070,
+  top: 5090,
   left: 0,
   behavior: 'smooth'
   });
@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_contact").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 4800,
+  top: 5800,
   left: 0,
   behavior: 'smooth'
 });
@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_skill").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 2820,
+  top: 3815,
   left: 0,
   behavior: 'smooth'
   });
@@ -233,7 +233,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_works").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 4200,
+  top: 5200,
   left: 0,
   behavior: 'smooth'
   });
@@ -245,7 +245,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("jump_contact").addEventListener("click", function(event) {
   event.preventDefault();
 window.scrollTo({
-  top: 4850,
+  top: 5850,
   left: 0,
   behavior: 'smooth'
 });
@@ -272,18 +272,19 @@ window.addEventListener("scroll", () => {
 });
 
 // スクロールトップボタン
-scrollTop('js-scroll-top', 150); // 遅すぎるとガクガクになるので注意
 
+
+  document.addEventListener("DOMContentLoaded", function() {
+document.getElementById("js-scroll-top").addEventListener("click", function(event) {
+  event.preventDefault();
+window.scrollTo({
+  top: 0,
+  left: 0,
+  behavior: 'smooth'
+  });
+});
+});
 function scrollTop(el, duration) {
-  const target = document.getElementById(el);
-  target.addEventListener('click', function() {
-    let currentY = window.pageYOffset; // 現在のスクロール位置を取得
-    let step = duration/currentY > 1 ? 10 : 100; // 三項演算子
-    let timeStep = duration/currentY * step; // スクロール時間
-    let intervalId = setInterval(scrollUp, timeStep);
-    // timeStepの間隔でscrollUpを繰り返す。
-    // clearItervalのために返り値intervalIdを定義する。
-
     function scrollUp(){
       currentY = window.pageYOffset;
       if(currentY === 0) {
@@ -292,5 +293,4 @@ function scrollTop(el, duration) {
           scrollBy( 0, -step ); // step分上へスクロール
       }
     }
-  });
-}
+  }

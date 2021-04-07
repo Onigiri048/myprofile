@@ -12,6 +12,7 @@
     margin: 10px auto;
     font-size: 13px;
   }
+
   .images img {
     margin: 10px;
     height: 100px;
@@ -60,6 +61,11 @@
     p {
       font-size: 15px;
     }
+  }
+
+  .conclusion {
+    font-size: 20px !important;
+    margin-top: 25px;
   }
 }
 
@@ -122,6 +128,11 @@
 
   .myphoto {
     margin: 50px 70px 50px;
+  }
+
+  .conclusion {
+    font-size: 18px !important;
+    margin-top: 25px;
   }
 }
 
@@ -191,5 +202,10 @@
 
   .myphoto {
     margin: 50px 40px 50px;
+  }
+
+  .conclusion {
+    font-size: 18px !important;
+    margin-top: 25px;
   }
 }

@@ -92,9 +92,23 @@ th {
   color: $base_color !important;
   letter-spacing: .8px;
   line-height: 2.3;
-  
 }
 
 .about_head {
   color: $base_color;
+}
+
+h4 {
+  color: $base_color;
+  font-family: 'Roboto', sans-serif;
+  margin: 25px 0 10px 0;
+}
+
+.text {
+  margin: 0;
+}
+
+.conclusion {
+  font-size: 25px;
+  margin-top: 25px;
 }
